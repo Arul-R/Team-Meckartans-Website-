@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Events</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+      <nav>
+         <a href="index.html">
+            <img src="logo.jpg" alt="Logo">
+         </a>
+         
+         <div class="dropdown">
+            <button class="round-button" onclick="toggleDropdown()">
+               <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-content" id="navLinks">
+               <ul>
+                  <li><a href="index.html">HOME</a></li> 
+                  <li><a href="EVENTS.html">EVENTS</a></li>
+                  <li><a href="HISTORY.html">HISTORY</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="CONTACT.html">ABOUT US</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav> 
+        <!--<div class="nav-links" id="navLinks">
+         <a href="index.html">
+           <img src="logo.jpg" alt="Logo">
+        </a>
+            <ul>
+                <li><a href="index.html">HOME</a></li> 
+                <li><a href="EVENTS.html">EVENTS</a></li>
+                <li><a href="HISTORY.html">HISTORY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="CONTACT.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        
+        <i class="fa fa-bars fa-2x" style="color:white" onclick="showMenu()"></i>
+       -->
+      <h1>Our Events</h1>
+   </section>
+   <!--course-->
+   <section class="course">
+      <h1> current events</h1>
+      <p>something about the events</p>
+      <div class="row">
+        <div class="course-col">
+           <h3>first one</h3>
+           <p>about it</p>
+        </div>
+        <div class="course-col">
+           <h3>second one</h3>
+           <p>about it</p>
+        </div>
+        <div class="course-col">
+           <h3>third one</h3>
+           <p>about it</p>
+        </div>
+      </div>
+   </section>
+   <!----JavaScript for Toggle Menu-->
+   <script>
+       var navLinks=document.getElementById("navLinks");
+       function showMenu(){
+          navLinks.style.right="0";
+        }
+       function hideMenu(){
+           navLinks.style.right="-200px";
+        }
+   </script>
+   <!--footer-->
+   <section class ="footer">
+      <h4>about us</h4>
+      <p>something about us ....</p>
+      <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin"></i>
+      </div>
+   </section>   
+   <script>
+      function toggleDropdown() {
+  var dropdownContent = document.querySelector(".dropdown-content");
+
+  if (event.target === document.querySelector(".round-button")) {
+    dropdownContent.classList.toggle("show");
+  } else {
+    if (dropdownContent.classList.contains("show")) {
+      dropdownContent.classList.remove("show");
+    }
+  }
+}
+
+      
+      window.onclick = function(event) {
+         var dropdownContent = document.querySelector(".dropdown-content");
+         var roundButton = document.querySelector(".round-button");
+
+         
+         if (!event.target.matches('.round-button') && !event.target.matches('.dropdown-content')) {
+            if (dropdownContent.classList.contains('show')) {
+               dropdownContent.classList.remove('show');
+            }
+         }
+      };
+   </script>
+</body>
+</html>

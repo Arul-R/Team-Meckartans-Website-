@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>About Us</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+               <img src="logo.jpg" alt="Logo">
+            </a>
+            
+            <div class="dropdown">
+               <button class="round-button" onclick="toggleDropdown()">
+                  <i class="fa fa-bars"></i>
+               </button>
+               <div class="dropdown-content" id="navLinks">
+                  <ul>
+                     <li><a href="index.html">HOME</a></li> 
+                     <li><a href="EVENTS.html">EVENTS</a></li>
+                     <li><a href="HISTORY.html">HISTORY</a></li>
+                     <li><a href="gallery.html">GALLERY</a></li>
+                     <li><a href="CONTACT.html">ABOUT US</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav> 
+        <h1>About Us</h1>
+     </section>
+<!----JavaScript for Toggle Menu-->
+  <script>
+      var navLinks=document.getElementById("navLinks");
+      function showMenu(){
+         navLinks.style.right="0";
+       }
+      function hideMenu(){
+         navLinks.style.right="-200px";
+      }
+  </script>
+<!--content-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Our Team</h1>
+            <p>so many things describing about team meckartans</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col"></div>
+        <img src="/home/vivek/photo_2023-06-28_21-18-34.jpg">
+    </div>
+</section>     
+<!--footer-->
+<section class ="footer">
+  <h4>CONATCT US</h4>
+  <div class="icons">
+     <i class="fa fa-facebook"></i>
+     <i class="fa fa-twitter"></i>
+     <i class="fa fa-instagram"></i>
+     <i class="fa fa-linkedin"></i>
+ </div>
+ <div class="contact-col">
+      <div>
+          <i class="fa fa-home" style="color:red"></i>
+          <span>
+              <h5>Sree chitra thirunal college of engg.,<br>pappanamcode,Thiruananthapuram,Kerala</h5>
+          </span>
+      </div>
+      <div>
+          <i class="fa fa-phone" style="color:red"></i>
+          <span>
+              <h5>91-ph no</h5>
+          </span>
+      </div>
+      <div>
+          <i class="fa fa-envelope-o" style="color:red"></i>
+          <span>
+              <h5> @ email id</h5>
+          </span>
+      </div>
+  </div>
+  <div class="contact-col"></div>
+</section> 
+<script>
+    function toggleDropdown() {
+var dropdownContent = document.querySelector(".dropdown-content");
+
+if (event.target === document.querySelector(".round-button")) {
+  dropdownContent.classList.toggle("show");
+} else {
+  if (dropdownContent.classList.contains("show")) {
+    dropdownContent.classList.remove("show");
+  }
+}
+}
+
+    
+    window.onclick = function(event) {
+       var dropdownContent = document.querySelector(".dropdown-content");
+       var roundButton = document.querySelector(".round-button");
+
+       
+       if (!event.target.matches('.round-button') && !event.target.matches('.dropdown-content')) {
+          if (dropdownContent.classList.contains('show')) {
+             dropdownContent.classList.remove('show');
+          }
+       }
+    };
+ </script>
+</body>
+</html>
+
+
