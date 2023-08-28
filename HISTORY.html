@@ -10,11 +10,16 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+   <div class="loader">
+      <img src="loading-90.gif" alt="Loading...">
+    </div>
    <section class="sub-header">
       <nav>
          <a href="index.html">
             <img src="logo.jpg" alt="Logo">
          </a>
+      </nav>
+   </section>
          
          <div class="dropdown">
             <button class="round-button" onclick="toggleDropdown()">
@@ -30,24 +35,11 @@
                </ul>
             </div>
          </div>
-      </nav> 
-        <!--<div class="nav-links" id="navLinks">
-         <a href="index.html">
-           <img src="logo.jpg" alt="Logo">
-        </a>
-            <ul>
-                <li><a href="index.html">HOME</a></li> 
-                <li><a href="EVENTS.html">EVENTS</a></li>
-                <li><a href="HISTORY.html">HISTORY</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="CONTACT.html">ABOUT US</a></li>
-            </ul>
-        </div>
-        
-        <i class="fa fa-bars fa-2x" style="color:white" onclick="showMenu()"></i>
-       -->
-      <h1>History</h1>
+
+   <section class="sub-heading">
+      <h3>History</h3>
    </section>
+
    <!----JavaScript for Toggle Menu-->
    <script>
        var navLinks=document.getElementById("navLinks");
@@ -91,17 +83,56 @@
       </div>
     </section>
    <!--footer-->
+
    <section class ="footer">
-      <h4>about us</h4>
-      <p>something about us ....</p>
-      <div class="icons">
-         <i class="fa fa-facebook"></i>
-         <i class="fa fa-twitter"></i>
-         <i class="fa fa-instagram"></i>
-         <i class="fa fa-linkedin"></i>
+      <br>
+      <h4>CONATCT US</h4>
+  <div class="icons">
+    <a href="https://www.instagram.com/teammeckartans/?hl=en" target="_blank">
+     <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/team-meckartans/?originalSubdomain=in" target="_blank">
+     <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://www.youtube.com/@teammec-kartans993/featured" target="_blank">
+        <i class="fa fa-youtube-play"></i>
+    </a>
+ </div>
+ <div class="contact-col">
+      <div>
+          <i class="fa fa-home" style="color:red"></i>
+          <span>
+              <h5>Sree chitra thirunal college of engg,<br>pappanamcode,Thiruananthapuram,Kerala</h5>
+          </span>
       </div>
-   </section>   
+      <div>
+          <i class="fa fa-phone" style="color:red"></i>
+          <span>
+              <h5>Captain: +91 9847213030</h5>
+              <h5>Manager: +91 8547455033</h5>
+          </span>
+      </div>
+      <div>
+        <a href="mailto:teammeckartans@gmail.com" target="_blank">
+          <i class="fa fa-envelope-o" style="color:red"></i>
+          <span>
+              <h5>teammeckartans@gmail.com</h5>
+          </span>
+        </a>
+      </div>
+  </div>
+  <div class="contact-col"></div>
+   </section> 
    <script>
+
+   window.onload = function() {
+   var loader = document.querySelector('.loader');
+   loader.style.display = 'block';
+   setTimeout(function() {
+      loader.style.display = 'none';
+   }, 500);
+   };
+
       function toggleDropdown() {
   var dropdownContent = document.querySelector(".dropdown-content");
 
