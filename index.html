@@ -3,15 +3,19 @@
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <title>Home</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="style.css"> 
+
+   
    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
 </head>
 
 <body>
+   <div class="loader">
+      <img src="loading-90.gif" alt="Loading...">
+    </div>
+    
    
    <section class="header">
       <nav>
@@ -38,21 +42,81 @@
          
       </div>
    </section>
+
+
+
    <div class="heading">
    <p>Team Meckartans - SCTCE</p>
    </div>
-   <script>
-      function toggleDropdown() {
-  var dropdownContent = document.querySelector(".dropdown-content");
 
-  if (event.target === document.querySelector(".round-button")) {
-    dropdownContent.classList.toggle("show");
-  } else {
-    if (dropdownContent.classList.contains("show")) {
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+   <section class ="footer">
+      <h4>CONATCT US</h4>
+  <div class="icons">
+    <a href="https://www.instagram.com/teammeckartans/?hl=en" target="_blank">
+     <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/team-meckartans/?originalSubdomain=in" target="_blank">
+     <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://www.youtube.com/@teammec-kartans993/featured" target="_blank">
+        <i class="fa fa-youtube-play"></i>
+    </a>
+ </div>
+ <div class="contact-col">
+      <div>
+          <i class="fa fa-home" style="color:red"></i>
+          <span>
+              <h5>Sree chitra thirunal college of engg,<br>pappanamcode,Thiruananthapuram,Kerala</h5>
+          </span>
+      </div>
+      <div>
+          <i class="fa fa-phone" style="color:red"></i>
+          <span>
+              <h5>Captain: +91 9847213030</h5>
+              <h5>Manager: +91 8547455033</h5>
+          </span>
+      </div>
+      <div>
+        <a href="mailto:teammeckartans@gmail.com" target="_blank">
+          <i class="fa fa-envelope-o" style="color:red"></i>
+          <span>
+              <h5>teammeckartans@gmail.com</h5>
+          </span>
+        </a>
+      </div>
+  </div>
+  <div class="contact-col"></div>
+   </section>
+
+
+
+
+
+   <script>
+      
+   window.onload = function() {
+   var loader = document.querySelector('.loader');
+   loader.style.display = 'block';
+   setTimeout(function() {
+      loader.style.display = 'none';
+   }, 500);
+   };
+
+
+   function toggleDropdown() {
+   var dropdownContent = document.querySelector(".dropdown-content");
+
+   if (event.target === document.querySelector(".round-button")) {
+   dropdownContent.classList.toggle("show");
+   } else {
+   if (dropdownContent.classList.contains("show")) {
       dropdownContent.classList.remove("show");
-    }
-  }
-}
+   }
+   }
+   }
+
 
       
       window.onclick = function(event) {
