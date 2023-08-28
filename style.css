@@ -53,8 +53,8 @@ body {
 }
 .sub-header nav a img {
     max-width: 100px; 
-    
  }
+ 
 
 .nav-links {
     display: flex;
@@ -282,6 +282,11 @@ body {
     color: wheat;
     font-size: 100px;
 }
+.sub-heading{
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+}
 .backgound{
     opacity: 100%;
 }
@@ -329,6 +334,10 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
+
+
+
 
 
 
