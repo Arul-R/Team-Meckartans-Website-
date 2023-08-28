@@ -13,7 +13,7 @@ body {
     background-image: url("bg_sent.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment:fixed;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
 }
@@ -41,7 +41,7 @@ body {
 
 /* Header styles */
 .header {
-    position: relative;
+    position: fixed;
     color: rgb(255, 255, 255);
     padding: 20px;
 }
@@ -194,6 +194,7 @@ body {
 
 /* Footer styles */
 .footer {
+    width: 100%;
     text-align: center;
     padding: 0px;
     background-color: #333;
@@ -212,9 +213,9 @@ body {
 
 /* Add styles for the round button */
 .round-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    top: 4vh;
+    right: 4vb;
     background-color: #333;
     color: white;
     width: 50px;
@@ -237,7 +238,7 @@ body {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 0;
     background-color: #333;
@@ -252,6 +253,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .dropdown-content li {
@@ -271,6 +273,7 @@ body {
     display: block;
 }
 .heading{
+    margin-top: 20vh;
     text-align: center;
     color: wheat;
     font-size: 100px;
@@ -322,5 +325,7 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
+
 
 
