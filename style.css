@@ -11,17 +11,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("bg_sent.jpeg");
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-color: rgba(0, 0, 0, 0);
-    position: relative;
+    position:sticky;
 }
 
 
 
 .loader {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -29,7 +30,7 @@ body {
     background-size: 20%;
     background:rgba(21, 25, 33);
     z-index: 3;
-  }
+  }     
   
   .loader img {
     margin-top: 12.5%;
@@ -42,12 +43,12 @@ body {
 /* Header styles */
 .header {
     position: fixed;
-    color: rgb(255, 255, 255);
+    color: #000;
     padding: 20px;
 }
 .sub-header{
     position: relative;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
     padding: 20px;
 }
 .sub-header nav a img {
@@ -197,6 +198,7 @@ body {
 /* Footer styles */
 .footer {
     width: 100%;
+    position: relative;
     text-align: center;
     padding: 0px;
     background-color: #333;
@@ -327,6 +329,10 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
+
+
+
 
 
 
