@@ -5,13 +5,39 @@
     box-sizing: border-box;
 }
 
+
+
 /* Global styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url("bg.jpg");
+    background-image: url("bg_sent.jpeg");
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
 }
+
+
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 20%;
+    background:rgba(21, 25, 33);
+    z-index: 3;
+  }
+  
+  .loader img {
+    margin-top: 12.5%;
+    margin-left: 35%;
+    height: 300px;
+    width: 400px;
+  }
+
 
 /* Header styles */
 .header {
@@ -19,12 +45,6 @@ body {
     color: rgb(255, 255, 255);
     padding: 20px;
 }
-
-.header nav a img {
-         max-width: 100px; 
-         
-}
-
 .sub-header{
     position: relative;
     color: rgb(255,255,255);
@@ -65,11 +85,15 @@ body {
     padding-top: 100px;
 }
 
+.header nav a img {
+    max-width: 100px; 
+    
+ }
+
 /* Course styles */
 .course {
     padding: 50px;
     text-align: center;
-    background-image: url("bg.jpg");
     background-size: cover;
     /*color: white;*/
 }
@@ -171,7 +195,7 @@ body {
 /* Footer styles */
 .footer {
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     background-color: #333;
     color: white;
 }
@@ -221,6 +245,8 @@ body {
     padding: 10px;
     z-index: 2; /* Make sure the dropdown is above other elements */
 }
+
+
 
 .dropdown-content ul {
     list-style: none;
@@ -296,3 +322,5 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
+
