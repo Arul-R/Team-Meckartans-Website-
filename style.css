@@ -86,6 +86,8 @@ body {
 }
 
 .header nav a img {
+    top: 4vh;
+    left: 4vb;
     max-width: 100px; 
     
  }
