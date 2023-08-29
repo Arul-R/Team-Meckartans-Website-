@@ -335,7 +335,22 @@ body {
     cursor: pointer;
 }
 
-
+@media (max-width: 500px) {
+    .loader img{
+        margin-left: 1%;
+        margin-top: 60%;
+    }
+    .nav-links {
+      flex-direction: column;
+    }
+    .heading{
+        margin-top: 20vh;
+        text-align: center;
+        color: wheat;
+        font-size: 60px;
+        padding: 10%,10%;
+    }
+  }
 
 
 
