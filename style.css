@@ -50,7 +50,7 @@ h6{
 }
 h4{
     color:#fff;
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px;
     font-family: "Times New Roman", Times, serif;
     margin-left:5%;
@@ -155,8 +155,8 @@ nav {
 }
 
 nav img {
-    width: 350px;
-    height: 150;
+    width: 100px;
+    height: 100px;
     position: relative;
 }
 
@@ -546,8 +546,8 @@ body {
 
   /* Slideshow container */
   .slideshow-container {
-    width: 80%;
-    max-height: 500px;
+    width: 800px;
+    height: 800px;
     position: relative;
     margin: auto;
   }
