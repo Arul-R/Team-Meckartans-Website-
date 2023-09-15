@@ -1,76 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<html>3
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Home</title>
+   <link rel="stylesheet" href="style.css"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
    
-    <!--<style>
-     body{
-    background-image: url("bg.jpg");
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0);
-     } 
-    
-    </style>-->
-  </head>
-  <body>
+   <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">-->
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+</head>
+
+<body>
    <div class="loader">
       <img src="loading-90.gif" alt="Loading...">
     </div>
-    <section class="sub-header">
-        <nav>
-          <a href="index.html">
-             <img src="logo.jpg" alt="Logo">
-          </a>
-        </nav>
-         </section>
-          
-          <div class="dropdown">
-             <button class="round-button" onclick="toggleDropdown()">
-                <i class="fa fa-bars"></i>
-             </button>
-             <div class="dropdown-content" id="navLinks">
+    
+   
+   <section class="header1">
+      <nav>
+         <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times fa-2x" style="color:white" onclick="hideMenu()"></i>
+               
+   
                 <ul>
-                   <li><a href="index.html">HOME</a></li> 
-                   <li><a href="EVENTS.html">EVENTS</a></li>
-                   <li><a href="HISTORY.html">HISTORY</a></li>
-                   <li><a href="gallery.html">GALLERY</a></li>
-                   <li><a href="CONTACT.html">ABOUT US</a></li>
+                  <li><a href="index.html" style="color:rgb(255, 255, 255);">HOME</a></li> 
+                  <li><a href="COMPETITIONS.html" style="color:rgb(255, 255, 255);">COMPETITIONS</a></li>
+                  <li><a href="FLAGSHIP EVENTS.html" style="color:rgb(255, 255, 255);">FLAGSHIP EVENTS</a></li>
+                  <li><a href="VEHICLES.html" style="color:rgb(255, 255, 255);">VEHICLES</a></li>
+                  <li><a href="gallery.html" style="color:rgb(255, 255, 255)";>GALLERY</a></li>
                 </ul>
-             </div>
           </div>
-       </nav> 
-
-   <section class="sub-heading">
-      <h3>Gallery</h3>
+         <i class="fa fa-bars fa-2x" style="color:white" onclick="showMenu()"></i>
+      </nav>
    </section>
-
   <!--<center><h1><u> GALLERY </u></h1>-->
+   <section class="sub-heading">
+      <div class="heading">
+         <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="animate-charcter2" text-align:center;> GALLERY</h3>
+              </div>
+            </div>
+          </div>
+       </div>
+   </section>
 	<!--<script src="index.js"></script>-->
   <div class="full-img" id="fullImgBox">
       <img src="fkdc.jpg" id="fullImg">
       <span onclick="CloseFullImg()">X</span>
   </div>
-    <div class="img-gal">
-        <img src="fkdc6.jpg" onclick="OpenFullImg(this.src)"> 
-        <img src="fkdc6-1.jpg"onclick="OpenFullImg(this.src)">
-        <img src="fkdc6-2.jpg"onclick="OpenFullImg(this.src)"> 
-        <img src="fkdc6-3.jpg"onclick="OpenFullImg(this.src)">
-        <img src="baja1.jpg"onclick="OpenFullImg(this.src)"> 
-        <img src="baja2.jpg"onclick="OpenFullImg(this.src)">
-        <img src="baja3.jpg"onclick="OpenFullImg(this.src)"> 
-        <img src="baja3.jpg"onclick="OpenFullImg(this.src)">
+   <div class="img-gal">
+        <img src="/home/vivek/Downloads/fkdc6.jpg" onclick="OpenFullImg(this.src)"> 
+        <img src="/home/vivek/Downloads/Telegram Desktop/photo_2023-09-10_19-56-07.jpg"onclick="OpenFullImg(this.src)">
+        <img src="/home/vivek/Downloads/fkdc6-2.jpg"onclick="OpenFullImg(this.src)"> 
+        <img src="/home/vivek/Downloads/fkdc6-3.jpg"onclick="OpenFullImg(this.src)">
+        <img src="/home/vivek/Downloads/baja1.jpg"onclick="OpenFullImg(this.src)"> 
+        <img src="/home/vivek/Downloads/baja2.jpg"onclick="OpenFullImg(this.src)">
+        <img src="/home/vivek/Downloads/baja2(1).jpg"onclick="OpenFullImg(this.src)"> 
+        <img src="/home/vivek/Downloads/Telegram Desktop/photo_2023-09-10_19-56-02.jpg"onclick="OpenFullImg(this.src)">
     
-    </div>
+   </div>
 
-    <section class ="footer">
+   <section class ="footer">
       <br>
       <h4>CONATCT US</h4>
   <div class="icons">
@@ -155,7 +157,22 @@
             }
          }
       };
-   </script>
-  </body>
-</html>
 
+       var navLinks=document.getElementById("navLinks");
+       function showMenu(){
+          navLinks.style.right="0";
+        }
+       function hideMenu(){
+           navLinks.style.right="-200px";
+        }
+      
+   window.onload = function() {
+   var loader = document.querySelector('.loader');
+   loader.style.display = 'block';
+   setTimeout(function() {
+      loader.style.display = 'none';
+   }, 500);
+   };
+</script>
+</body>
+</html>

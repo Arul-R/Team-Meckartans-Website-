@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html>3
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <title>Home</title>
    <link rel="stylesheet" href="style.css"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
    
    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,40 +27,134 @@
    
    <section class="header">
       <nav>
-         <a href="index.html">
-            <img src="logo.jpg" alt="Logo">
-         </a>
-      </section>
-         <div class="dropdown">
-            <button class="round-button" onclick="toggleDropdown()">
-               <i class="fa fa-bars"></i>
-            </button>
-            <div class="dropdown-content" id="navLinks">
-               <ul>
-                  <li><a href="index.html">HOME</a></li> 
-                  <li><a href="EVENTS.html">EVENTS</a></li>
-                  <li><a href="HISTORY.html">HISTORY</a></li>
-                  <li><a href="gallery.html">GALLERY</a></li>
-                  <li><a href="CONTACT.html">ABOUT US</a></li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <div class="text-box">
-         
-      </div>
+         <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times fa-2x" style="color:white" onclick="hideMenu()"></i>
+               
    
-
-
-
-   <div class="heading">
-   <p>Team Meckartans</p>
+                <ul>
+                  <li><a href="index.html" style="color:rgb(255, 255, 255);">HOME</a></li> 
+                  <li><a href="COMPETITIONS.html" style="color:rgb(255, 255, 255);">COMPETITIONS ATTENDED</a></li>
+                  <li><a href="FLAGSHIP EVENTS.html" style="color:rgb(255, 255, 255);">FLAGSHIP EVENTS</a></li>
+                  <li><a href="VEHICLES.html" style="color:rgb(255, 255, 255);">VEHICLES</a></li>
+                  <li><a href="gallery.html" style="color:rgb(255, 255, 255)";>GALLERY</a></li>
+                </ul>
+          </div>
+         <i class="fa fa-bars fa-2x" style="color:white" onclick="showMenu()"></i>
+      </nav>
+   </section>
+    
+    <div class="heading">
+      <div class="container">
+         <div class="row">
+           <div class="col-md-12 text-center">
+             <h3 class="animate-charcter" text-align:center;> &emsp;TEAM MECKARTANS</h3>
+           </div>
+         </div>
+       </div>
+    </div>
+   <div class="text-box">
+         
    </div>
-
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <div>
-
+ <h4 style="color:white;" text-align:center;>Team Meckartans is the student motor sporting team of Sree Chitra Thirunal College of  Engineering, Trivandrum. A group of dedicated, passionate, and hardworking  engineering students from all departments striving for engineering excellence. Ever since its inception in 2012, Team Meckartans have thrived on being the best motor sporting team in the country. Today, Team Meckartans is a team that has earned a name in the various Go Karting and ATV competitions in the country.   </h4>
+<br>
+<br>
+   <!----events-->
+<section class="competition">
+   <h1 style="background-image: url('/home/vivek/3.jpg');"> COMPETITIONS ATTENDED </h1>
+   
+   <div class="row">
+     <div class="competition-col">
+        <img src="/home/vivek/Downloads/344215468_193033863590131_8541573192129395893_n.jpg">
+        <div class="layer">
+         <h2> BAJA  <br> <a href="COMPETITIONS.html" id="1" class="hero-btn red-btn">EXPLORE NOW</a></h2>
+        </div>
+     </div>
+   <div class="competition-col">
+      <img src="/home/vivek/Downloads/330488021_1244751073085261_5653640567002316570_n.jpg ">
+      <div class="layer">
+       <h2> FKDC <br> <a href="COMPETITIONS.html" id="2" class="hero-btn red-btn">EXPLORE NOW</a></h2>
+      </div>
    </div>
+   <div class="competition-col">
+      <img src="/home/vivek/Downloads/186263136_808057310148917_1984729484257780665_n.jpg " >
+      <div class="layer">
+       <h2>MEGA TV CHAMPIONSHIP <br> <a href="COMPETITIONS.html" class="hero-btn red-btn">EXPLORE NOW</a></h2>
+      </div>
+   </div>
+     
+   </div>
+</section>
+<br>
+<br>
+<br>
+<!--workshop-->
+<section class="flagship">
+  <h1 style="background-image: url('/home/vivek/3.jpg');">FLAGSHIP EVENTS</h1>
+  <marquee behavior="scroll" direction="right" style="color:#fff;"> "At this moment, we do not have any scheduled events or activities." </marquee>
+  <div class="row">
+    <div class="flagship-col">
+       <h2>GO KRAFT <br> <a href="FLAGSHIP EVENTS.html" class="hero-btn red-btn">EXPLORE NOW</a></h2>
+    </div>
+    <div class="flagship-col">
+       <h2>POWERSTROKE <br> <a href="FLAGSHIP EVENTS.html" class="hero-btn red-btn">EXPLORE NOW</a></h2>
+    </div>
+</section>
+<br>
+<br>
+<!---mk- series-->
+<section>
+<h1 style="background-image: url('/home/vivek/Downloads/5443364 3.jpg');"> MK-SERIES</h1>
+<div class="slideshow-container">
+ <!-- Full-width images with number and caption text -->
+ <div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="/home/vivek/Downloads/MK1mkseries.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="/home/vivek/Downloads/mk2mkseries.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="/home/vivek/gallery/mk3/7ac0a417-6d21-425f-b6bb-e6773c2a17ee.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+   <div class="numbertext">4 / 5</div>
+   <img src="/home/vivek/Downloads/mk4mkseries.jpg" style="width:100%">
+ </div>
+ <div class="mySlides fade">
+   <div class="numbertext">5 / 5</div>
+   <img src="/home/vivek/Downloads/mk5mkseries.jpg " style="width:100%">
+
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
    <section class ="footer">
       <br>
@@ -100,7 +200,14 @@
 
 
 
-   <script>
+<script>
+       var navLinks=document.getElementById("navLinks");
+       function showMenu(){
+          navLinks.style.right="0";
+        }
+       function hideMenu(){
+           navLinks.style.right="-200px";
+        }
       
    window.onload = function() {
    var loader = document.querySelector('.loader');
@@ -111,35 +218,53 @@
    };
 
 
-   function toggleDropdown() {
-   var dropdownContent = document.querySelector(".dropdown-content");
 
-   if (event.target === document.querySelector(".round-button")) {
-   dropdownContent.classList.toggle("show");
-   } else {
-   if (dropdownContent.classList.contains("show")) {
-      dropdownContent.classList.remove("show");
-   }
-   }
-   }
+// Function to show a specific slide
+let slideIndex = 1;
+let slideInterval;
+
+showSlides(slideIndex);
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1; // Reset to the first slide
+  }
+  if (n < 1) {
+    slideIndex = slides.length; // Go to the last slide if at the beginning
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+  clearInterval(slideInterval); // Clear the interval to pause automatic sliding
+  showSlides((slideIndex += n));
+  startAutoSlide(); // Restart automatic sliding after button click
+}
+
+function startAutoSlide() {
+  slideInterval = setInterval(function () {
+    plusSlides(1); // Go to the next slide every 4 seconds
+  }, 4000);
+}
+
+function onPageLoad() {
+  startAutoSlide(); // Start automatic sliding when the page loads
+}
+
+// Call onPageLoad to start the automatic sliding when the page loads
+onPageLoad();
 
 
-      
-      window.onclick = function(event) {
-         var dropdownContent = document.querySelector(".dropdown-content");
-         var roundButton = document.querySelector(".round-button");
 
-         
-         if (!event.target.matches('.round-button') && !event.target.matches('.dropdown-content')) {
-            if (dropdownContent.classList.contains('show')) {
-               dropdownContent.classList.remove('show');
-            }
-         }
-      };
-   </script>
+</script>
+
 </body>
 </html>
-
 
 
 
