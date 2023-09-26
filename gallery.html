@@ -61,14 +61,14 @@
       <span onclick="CloseFullImg()">X</span>
   </div>
    <div class="img-gal">
-        <img src="/home/vivek/Downloads/fkdc6.jpg" onclick="OpenFullImg(this.src)"> 
-        <img src="/home/vivek/Downloads/Telegram Desktop/photo_2023-09-10_19-56-07.jpg"onclick="OpenFullImg(this.src)">
-        <img src="/home/vivek/Downloads/fkdc6-2.jpg"onclick="OpenFullImg(this.src)"> 
-        <img src="/home/vivek/Downloads/fkdc6-3.jpg"onclick="OpenFullImg(this.src)">
-        <img src="/home/vivek/Downloads/baja1.jpg"onclick="OpenFullImg(this.src)"> 
-        <img src="/home/vivek/Downloads/baja2.jpg"onclick="OpenFullImg(this.src)">
-        <img src="/home/vivek/Downloads/baja2(1).jpg"onclick="OpenFullImg(this.src)"> 
-        <img src="/home/vivek/Downloads/Telegram Desktop/photo_2023-09-10_19-56-02.jpg"onclick="OpenFullImg(this.src)">
+      <img src="pic1.jpg"onclick="OpenFullImg(this.src)"> 
+        <img src="fkdc6.jpg" onclick="OpenFullImg(this.src)"> 
+        <img src="photo_2023-09-10_19-56-07.jpg"onclick="OpenFullImg(this.src)">
+        <img src="fkdc6-2.jpg"onclick="OpenFullImg(this.src)"> 
+        <img src="fkdc6-3.jpg"onclick="OpenFullImg(this.src)">
+        <img src="baja1.jpg"onclick="OpenFullImg(this.src)"> 
+        <img src="baja2.jpg"onclick="OpenFullImg(this.src)">
+        <img src="photo_2023-09-10_19-56-02.jpg"onclick="OpenFullImg(this.src)">
     
    </div>
 
@@ -163,7 +163,7 @@
           navLinks.style.right="0";
         }
        function hideMenu(){
-           navLinks.style.right="-200px";
+           navLinks.style.right="-500px";
         }
       
    window.onload = function() {
@@ -173,6 +173,54 @@
       loader.style.display = 'none';
    }, 500);
    };
+
+
+// Function to show a specific slide
+let slideIndex = 1;
+let slideInterval;
+
+showSlides(slideIndex);
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1; // Reset to the first slide
+  }
+  if (n < 1) {
+    slideIndex = slides.length; // Go to the last slide if at the beginning
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+  clearInterval(slideInterval); // Clear the interval to pause automatic sliding
+  showSlides((slideIndex += n));
+  startAutoSlide(); // Restart automatic sliding after button click
+}
+
+function startAutoSlide() {
+  slideInterval = setInterval(function () {
+    plusSlides(1); // Go to the next slide every 4 seconds
+  }, 4000);
+}
+
+function onPageLoad() {
+  startAutoSlide(); // Start automatic sliding when the page loads
+}
+
+// Call onPageLoad to start the automatic sliding when the page loads
+onPageLoad();
+
+
+
+</script>
+
+</body>
+</html>
 </script>
 </body>
 </html>
