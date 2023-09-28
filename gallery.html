@@ -23,16 +23,16 @@
    
     
    
-   <section class="header1">
-      <nav>
+   <section class="subheader">
+      <subnav>
          <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
-            <div class="nav-links" id="navLinks">
+            <div class="subnav-links" id="subnavLinks">
                <i class="fa fa-times fa-2x" style="color:white" onclick="hideMenu()"></i>
                
    
                 <ul>
                   <li><a href="index.html" style="color:rgb(255, 255, 255);">HOME</a></li> 
-                  <li><a href="COMPETITIONS.html" style="color:rgb(255, 255, 255);">COMPETITIONS</a></li>
+                  <li><a href="COMPETITIONS.html" style="color:rgb(255, 255, 255);">COMPETITIONS ATTENDED</a></li>
                   <li><a href="FLAGSHIP EVENTS.html" style="color:rgb(255, 255, 255);">FLAGSHIP EVENTS</a></li>
                   <li><a href="VEHICLES.html" style="color:rgb(255, 255, 255);">VEHICLES</a></li>
                   <li><a href="gallery.html" style="color:rgb(255, 255, 255)";>GALLERY</a></li>
@@ -59,6 +59,10 @@
       <span onclick="CloseFullImg()">X</span>
   </div>
    <div class="img-gal">
+
+      <img src="pic1.jpg"onclick="OpenFullImg(this.src)"> 
+
+
         <img src="fkdc6.jpg" onclick="OpenFullImg(this.src)"> 
         <img src="photo_2023-09-10_19-56-07.jpg"onclick="OpenFullImg(this.src)">
         <img src="fkdc6-2.jpg"onclick="OpenFullImg(this.src)"> 
@@ -66,7 +70,10 @@
         <img src="baja1.jpg"onclick="OpenFullImg(this.src)"> 
         <img src="baja2.jpg"onclick="OpenFullImg(this.src)">
         <img src="photo_2023-09-10_19-56-02.jpg"onclick="OpenFullImg(this.src)">
+
+
         <img src="bg_sent.jpeg"onclick="OpenFullImg(this.src)">
+
     
    </div>
 
@@ -149,12 +156,12 @@
          }
       };
 
-       var navLinks=document.getElementById("navLinks");
+       var subnavLinks=document.getElementById("subnavLinks");
        function showMenu(){
-          navLinks.style.right="0";
+          subnavLinks.style.right="0";
         }
        function hideMenu(){
-           navLinks.style.right="-200px";
+           subnavLinks.style.right="-500px";
         }
       
    window.onload = function() {
@@ -164,6 +171,54 @@
       loader.style.display = 'none';
    }, 500);
    };
+
+
+// Function to show a specific slide
+let slideIndex = 1;
+let slideInterval;
+
+showSlides(slideIndex);
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1; // Reset to the first slide
+  }
+  if (n < 1) {
+    slideIndex = slides.length; // Go to the last slide if at the beginning
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+  clearInterval(slideInterval); // Clear the interval to pause automatic sliding
+  showSlides((slideIndex += n));
+  startAutoSlide(); // Restart automatic sliding after button click
+}
+
+function startAutoSlide() {
+  slideInterval = setInterval(function () {
+    plusSlides(1); // Go to the next slide every 4 seconds
+  }, 4000);
+}
+
+function onPageLoad() {
+  startAutoSlide(); // Start automatic sliding when the page loads
+}
+
+// Call onPageLoad to start the automatic sliding when the page loads
+onPageLoad();
+
+
+
+</script>
+
+</body>
+</html>
 </script>
 </body>
 </html>
