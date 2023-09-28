@@ -25,10 +25,10 @@
     </div>
     
    
-   <section class="header1">
-      <nav>
+   <section class="subheader">
+      <subnav>
          <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
-            <div class="nav-links" id="navLinks">
+            <div class="subnav-links" id="subnavLinks">
                <i class="fa fa-times fa-2x" style="color:white" onclick="hideMenu()"></i>
                
    
@@ -96,9 +96,7 @@
                   With participation from Top-ranked universities in India, taking part in SAE Baja guarantees  the exposure that Engineering students are bound to get. SAE Baja is sure to inculcate a  competitive mind in the members of Team Meckartans and enable us to learn more than just  book- knowledge. 
 ❖ Participated in SAE Baja 2023 and Qualified till technical   
 ❖ Participated in SAE Baja Online 2021   
-❖ 2019 SAE Baja Virtuals overall 2nd among Kerala teams
-
-               </h4>
+❖ 2019 SAE Baja Virtuals overall 2nd among Kerala teams</h4>
               </div>
                 
                <h2 style="background-image: url('3.jpg');">FORMULA KART DESIGN CHALLENGE</h2>
@@ -119,13 +117,13 @@
                     
                     <img src="fkdc6.jpg" style="width:70%">
                   </div>
+                  
                 <!-- Next and previous buttons -->
                   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
                   </div>
                   </section>
-               <h4 style="color:#fff;"> 
-                  Formula Kart Design Challenge (FKDC) is the most promising design challenge in India. The  only design challenge in the country to be headed by 25 Technical Committee members, all of  them having healthy knowledge in designing and fabrication of karts from reputed industries  like General Motors, Fiat, PwC, Tata Motors, Honda, Ford, and Hero MotoCorp. The  educational experts come from various reputed institutions from all over the globe to impart  skills in this sector. We also bring you the most skilled organizing team in the country.  
+               <h4 style="color:#fff;"> Formula Kart Design Challenge (FKDC) is the most promising design challenge in India. The  only design challenge in the country to be headed by 25 Technical Committee members, all of  them having healthy knowledge in designing and fabrication of karts from reputed industries  like General Motors, Fiat, PwC, Tata Motors, Honda, Ford, and Hero MotoCorp. The  educational experts come from various reputed institutions from all over the globe to impart  skills in this sector. We also bring you the most skilled organizing team in the country.  
                   Fraternity of Mechanical and Automotive Engineers (FMAE) comprises a bunch of  professionals having exposure at international levels. Brace yourselves to get acquainted with  the best organizing, managing, and technical team in the country. We have always been  coming up with innovative ideas for conducting design challenges in the country. This is yet  another initiative that makes way for the participating teams to enhance their skill in this  field.  
                    <br>❖ <u>2023 FKDC season 6:</u><br>
                                  ➢ Design and CAE winner<br>
@@ -262,6 +260,13 @@
         }
        function hideMenu(){
            navLinks.style.right="-200px";
+        }
+        var subnavLinks=document.getElementById("subnavLinks");
+       function showMenu(){
+          subnavLinks.style.right="0";
+        }
+       function hideMenu(){
+           subnavLinks.style.right="-200px";
         }
       
    window.onload = function() {
