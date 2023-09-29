@@ -20,9 +20,7 @@
 </head>
 
 <body>
-   <div class="loader">
-      <img src="loading-90.gif" alt="Loading...">
-    </div>
+   
     
    
    <section class="subheader">
@@ -57,7 +55,10 @@
       <span onclick="CloseFullImg()">X</span>
   </div>
    <div class="img-gal">
+
       <img src="pic1.jpg"onclick="OpenFullImg(this.src)"> 
+
+
         <img src="fkdc6.jpg" onclick="OpenFullImg(this.src)"> 
         <img src="photo_2023-09-10_19-56-07.jpg"onclick="OpenFullImg(this.src)">
         <img src="fkdc6-2.jpg"onclick="OpenFullImg(this.src)"> 
@@ -65,6 +66,10 @@
         <img src="baja1.jpg"onclick="OpenFullImg(this.src)"> 
         <img src="baja2.jpg"onclick="OpenFullImg(this.src)">
         <img src="photo_2023-09-10_19-56-02.jpg"onclick="OpenFullImg(this.src)">
+
+
+        <img src="bg_sent.jpeg"onclick="OpenFullImg(this.src)">
+
     
    </div>
 
@@ -110,13 +115,6 @@
 
     <script>
 
-   window.onload = function() {
-   var loader = document.querySelector('.loader');
-   loader.style.display = 'block';
-   setTimeout(function() {
-      loader.style.display = 'none';
-   }, 500);
-   };
 
       var fullImgBox=document.getElementById("fullImgBox");
       var fullImg=document.getElementById("fullImg");
