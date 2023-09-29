@@ -21,10 +21,7 @@ h3{
     font-weight: 1000;
     padding-top: 0px;
     padding-bottom: 25px;
-    text-align:left;
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
 
 
 }
@@ -90,6 +87,8 @@ h4{
 .animate-charcter
 {
    text-transform: uppercase;
+   right: 50%;
+   left:50%;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -109,11 +108,12 @@ h4{
   display: inline-block;
   font-size: 80px;
   font-weight: 1000;
-   text-align: center;
 }
 .animate-charcter2
 {
    text-transform: uppercase;
+   right:50%;
+   left:50%;
   background-image: linear-gradient(
     -225deg,
     #ffffff 0%,
@@ -124,7 +124,7 @@ h4{
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  margin-left: 20%;
+  text-align: center;
   color: #fff;
   font: serif;
   background-clip: text;
@@ -134,7 +134,6 @@ h4{
   display: inline-block;
       font-size: 80px;
       font-weight: bolder;
-      text-align: center;
 }
 
 @keyframes textclip {
@@ -178,18 +177,19 @@ h4{
     background-image: url('bg_sent.jpeg'); /* Set your initial background image */
     background-size: cover;
     background-repeat: no-repeat;
+     transition: all 0.3s ease;
     animation: slideBackground 15s infinite alternate; /* Adjust animation duration as needed */
 }
 
 @keyframes slideBackground {
     0% {
-        background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.5)), url('bg_sent.jpeg') /* Initial background image */
+        background-image: linear-gradient(rgba(2, 7, 30, 0.7), rgba(4, 9, 30, 0.5)), url('bg_sent.jpeg') /* Initial background image */
     }
     50% {
-        background-image:linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.5)), url('fkdc6.jpg')/* Next background image */
+        background-image:linear-gradient(rgba(2, 7, 30, 0.7), rgba(4, 9, 30, 0.5)), url('fkdc6.jpg')/* Next background image */
     }
     100% {
-        background-image:linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.5)), url('photo_2023-09-10_19-56-07.jpg')/* Back to the initial image */
+        background-image:linear-gradient(rgba(2, 7, 30, 0.7), rgba(4, 9, 30, 0.5)), url('photo_2023-09-10_19-56-07.jpg')/* Back to the initial image */
     }
 }
 nav {
@@ -723,25 +723,11 @@ h4{
     margin-left:5%;
     margin-right:5%;
 }
-.heading{
-    margin-top: 5px;
-    text-align: center;
-    font-size: 40px;
-    text-align: center;
-}
-.sub-heading{
-    text-align: center;
-    color: wheat;
-    font-size: 40px;
-}
-.header {
-    position: relative;
-    height:50vh; /* Set header height to viewport height */
-    overflow: hidden; /* Hide overflowing background image */
-}
 .animate-charcter
 {
    text-transform: uppercase;
+   left: 50%;
+   right: 50%;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -760,11 +746,13 @@ h4{
   display: inline-block;
       font-size: 40px;
       font-weight: 1000;
-      text-align: center;
+    
 }
 .animate-charcter2
 {
    text-transform: uppercase;
+   right: 50%;
+   left:50%;
   background-image: linear-gradient(
     -225deg,
     #ffffff 0%,
